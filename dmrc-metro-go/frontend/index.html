@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DMRC Metro Go</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>DMRC Metro Go</h1>
+      <p>Find routes, fares, and travel times for Delhi Metro</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="route-planner">
+        <h2>Plan Your Journey</h2>
+        <form id="route-form">
+          <div class="form-group">
+            <label for="from-station">From:</label>
+            <select id="from-station" required>
+              <option value="">Select origin station</option>
+              <!-- Stations will be populated by JavaScript -->
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="to-station">To:</label>
+            <select id="to-station" required>
+              <option value="">Select destination station</option>
+              <!-- Stations will be populated by JavaScript -->
+            </select>
+          </div>
+          
+          <button type="submit" class="btn">Find Route</button>
+        </form>
+      </div>
+
+      <div class="results" id="results">
+        <!-- Results will be displayed here -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 DMRC Metro Go - Student Project</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/routes.js"></script>
+</body>
+</html>
